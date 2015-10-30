@@ -12,16 +12,16 @@ class CustomTabBar: UITabBarController {
     
     class func CusTomTabBar() ->UITabBarController{
         
-        var vc1 = Home_VC()
-        var vc2 = Class_VC()
-        var vc3 = Brand_VC()
-        var vc4 = Shoping_VC()
-        var vc5 = Personal_VC()
-        var nvc1:UINavigationController = LBNvc(rootViewController: vc1)
-        var nvc2:UINavigationController = LBNvc(rootViewController: vc2)
-        var nvc3:UINavigationController = LBNvc(rootViewController: vc3)
-        var nvc4:UINavigationController = LBNvc(rootViewController: vc4)
-        var nvc5:UINavigationController = LBNvc(rootViewController: vc5)
+        let vc1 = Home_VC()
+        let vc2 = Class_VC()
+        let vc3 = Brand_VC()
+        let vc4 = Shoping_VC()
+        let vc5 = Personal_VC()
+        let nvc1:UINavigationController = LBNvc(rootViewController: vc1)
+        let nvc2:UINavigationController = LBNvc(rootViewController: vc2)
+        let nvc3:UINavigationController = LBNvc(rootViewController: vc3)
+        let nvc4:UINavigationController = LBNvc(rootViewController: vc4)
+        let nvc5:UINavigationController = LBNvc(rootViewController: vc5)
         let tabbar1 = UITabBarItem(title: "首页", image: (Public .getImgView("home_tab_home_btn@2x")) , selectedImage: (Public .getImgView("home_tab_home_selected_btn@2x")))
         let tabbar2 = UITabBarItem(title: "分类", image: (Public .getImgView("home_tab_saunter_btn@2x")), selectedImage: (Public .getImgView("home_tab_saunter_selected_btn@2x")))
         let tabbar3 = UITabBarItem(title: "品牌团", image: (Public .getImgView("home_tab_branc_btn@2x")), selectedImage: (Public .getImgView("home_tab_branc_selected_btn@2x")))
@@ -32,7 +32,7 @@ class CustomTabBar: UITabBarController {
         nvc3.tabBarItem = tabbar3;
         nvc4.tabBarItem = tabbar4;
         nvc5.tabBarItem = tabbar5;
-        var tc = UITabBarController()
+        let tc = UITabBarController()
         
         tc.tabBar.tintColor = UIColor .redColor()
 //        tc.tabBar.backgroundImage = Public.getImgView("3.png")
