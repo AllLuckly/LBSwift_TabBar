@@ -32,12 +32,12 @@ class CustomTabBar: UITabBarController {
         brandNvc.tabBarItem = brandTabbarItem;
         shopingNvc.tabBarItem = shopingTabbarItem;
         personalNvc.tabBarItem = personalTabbarItem;
-        let tc = UITabBarController()
+        let taBarVC = UITabBarController()
         
-        tc.tabBar.tintColor = UIColor.red
+        taBarVC.tabBar.tintColor = UIColor.red
         //        tc.tabBar.backgroundImage = Public.getImgView("3.png")
-        tc.viewControllers = [homeNvc,classNvc,brandNvc,shopingNvc,personalNvc];
-        return taBar;
+        taBarVC.viewControllers = [homeNvc,classNvc,brandNvc,shopingNvc,personalNvc];
+        return taBarVC;
     }
 
 }
