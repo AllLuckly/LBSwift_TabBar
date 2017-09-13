@@ -10,11 +10,11 @@ import UIKit
 
 class Public: NSObject {
     
-    class func getImgView(ImgName: NSString)->UIImage{
+    class func getImgView(_ ImgName: NSString)->UIImage{
         
         var image:UIImage = UIImage(named: ImgName as String)!
         
-        image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+        image = image.withRenderingMode(UIImageRenderingMode.alwaysOriginal);
         
         return image;
     }

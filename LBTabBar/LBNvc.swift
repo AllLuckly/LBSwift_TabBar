@@ -12,8 +12,8 @@ class LBNvc: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let navigationTitleAttribute : NSDictionary = NSDictionary(object: UIColor.redColor(),forKey: NSForegroundColorAttributeName)
-        self.navigationBar.titleTextAttributes = navigationTitleAttribute as [NSObject : AnyObject] as? [String : AnyObject]
+        let navigationTitleAttribute : NSDictionary = NSDictionary(object: UIColor.red,forKey: NSForegroundColorAttributeName as NSCopying)
+        self.navigationBar.titleTextAttributes = navigationTitleAttribute as! [AnyHashable: Any] as? [String : AnyObject]
 //        self.navigationBar .setBackgroundImage(UIImage(named: "4.png"), forBarMetrics: .Default)
         
     }
